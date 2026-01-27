@@ -8,10 +8,20 @@ To accurately represent global biodiversity changes, these datasets would need t
 
 Habitat loss, and levels of sampling, vary by continent and biome, and so we further specify our core question to the following:
 
-
 _How representative are LPD and BioTIME samples of levels of habitat loss experienced in each biome, in each continent?_
 
 Habitat loss also varies annually, and so we estimate loss across all years for which data is available.
+
+## Workflow
+We obtained data on loss of primary habitat in grid cells across the globe for every year from 1950-2015.
+
+Then, for each Biome in each continent we obtained (Code Section 5):
+- Estimates of Primary Habitat Loss for every gridcell in every year
+- Estimates of Primary Habitat Loss in gridcell-years sampled by LPD and BioTIME
+
+We created density plots visualising the distribution of these estimates per Biome/Continent grouping (Code Section 6). We could not include all examples in our main figure, see 'Figures' for all Continent x Biome combinations - in all cases grey = all grid cells, yellow = BioTIME and green = LPI.
+
+In most cases, LPD and BioTIME samples are biased towards gridcells experiencing lower levels of loss than the majority (Weighting Bias). In many cases, there are very few or no LPD/BioTIME samples in grid cells experiencing highest loss (Dark Bias). 
 
 ## Map Data
 Biome data was obtained from WWF "Terrestrial Ecoregions of the World" (WWF link to download currently down, also available [here](https://databasin.org/datasets/68635d7c77f1475f9b6c1d1dbe0a4c4c/). We simplified these to a coarser scale, for instance, categorising 'Tropical & Subtropical Moist Broadleaf Forests' to simply 'Tropical Forests' etc - see Code Section 1A for all categorisations.
@@ -26,11 +36,3 @@ Habitat loss data was obtained from the Land Use Harmonisation project, see [Hur
 
 We took data from the [LUH2 v2h release - Historic Data - Transitions](https://luh.umd.edu/data.shtml). This gives gridded annual estimates of all transitions between habitat types between 850AD and 2015 (for example 'Primary Forested Land to Secondary Non Forested Land', 'Rangeland to Urban', 'Pasture to Biofuel Cropland'). There are two types of Primary Habitat (Primary Forested Land, Primary Non-forested Land), we considered any transition from these classifications to another as 'Primary Habitat Loss', and summed all transition estimates per grid cell, per year (for all years from 1950-2015). See Code Section 3. 
 
-## Workflow
-We extracted Biome classification and continent for each record in LPI and BioTIME (Code Section 4)
-
-Then, for each Biome in each continent we obtained (Code Section 5):
-- Estimates of Primary Habitat Loss for every gridcell in every year
-- Estimates of Primary Habitat Loss in gridcell-years sampled by LPD and BioTIME
-
-Finally, we created density plots visualising the distribution of these estimates per Biome/Continent grouping (Code Section 6). We could not include all examples in our main figure, see 'Figures' for all Continent x Biome combinations - in all cases grey = all grid cells, yellow = BioTIME and green = LPI.
