@@ -8,9 +8,8 @@ To accurately represent global biodiversity changes, these datasets would need t
 
 Habitat loss, and levels of sampling, vary by continent and biome, and so we further specify our core question to the following:
 
-<p style="text-align:center;">
-**How representative are LPD and BioTIME samples of levels of habitat loss experienced in each biome, in each continent?**
-</p>
+
+_How representative are LPD and BioTIME samples of levels of habitat loss experienced in each biome, in each continent?_
 
 Habitat loss also varies annually, and so we estimate loss across all years for which data is available.
 
@@ -34,4 +33,4 @@ Then, for each Biome in each continent we obtained (Code Section 5):
 - Estimates of Primary Habitat Loss for every gridcell in every year
 - Estimates of Primary Habitat Loss in gridcell-years sampled by LPD and BioTIME
 
-Finally, we created density plots visualising the distribution of these estimates per Biome/Continent grouping (Code Section 6). We could not include all examples in our main figure, see 'Figures' for all Continent x Biome combinations.
+Finally, we created density plots visualising the distribution of these estimates per Biome/Continent grouping (Code Section 6). We could not include all examples in our main figure, see 'Figures' for all Continent x Biome combinations - in all cases grey = all grid cells, yellow = BioTIME and green = LPI.
