@@ -12,6 +12,10 @@ _How representative are LPD and BioTIME samples of levels of habitat loss experi
 
 Habitat loss also varies annually, and so we estimate loss across all years for which data is available.
 
+The results figure shows example outputs for biomes, and a general trend (repeated across biomes) for samples to be disproprotionately high in areas of lowest primary habitat loss
+
+![FinalFigure](ResultsFigure.jpg "a title")
+
 ## Workflow
 We obtained data on loss of primary habitat in grid cells across the globe for every year from 1950-2015.
 
